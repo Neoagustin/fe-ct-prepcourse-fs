@@ -3,6 +3,10 @@ function esVocal(letra) {
   // Si el usuario ingresa un string de más de un caracter, debes retornar el mensaje: "Dato incorrecto".
   // Si no es vocal, tambien debe retornar "Dato incorrecto".
   // Tu código:
+  
+  return typeof letra === 'string' && letra.length === 1
+  ? 'aeiou'.includes(letra) ? 'Es vocal' : 'Dato incorrecto'
+  : 'Dato incorrecto';
 }
 
 module.exports = esVocal;
